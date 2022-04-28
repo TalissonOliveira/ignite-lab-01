@@ -37,6 +37,15 @@
     ora "5.4.1"
     rxjs "6.6.7"
 
+"@apollo/federation@^0.36.1":
+  version "0.36.1"
+  resolved "https://registry.yarnpkg.com/@apollo/federation/-/federation-0.36.1.tgz#25afa0598c701763928de13f6fbbe49dfabdb24e"
+  integrity sha512-SAvW7ZRUEtmAdK+UWRXZxo/wRNVbDDyYbeYJooKAtvc8B4Mly+2PusqBQ+4RuHhg5dSqrv5d6RXJeY9MBiraVA==
+  dependencies:
+    "@apollo/subgraph" "^0.4.1"
+    apollo-server-types "^3.0.2"
+    lodash.xorby "^4.7.0"
+
 "@apollo/protobufjs@1.2.2":
   version "1.2.2"
   resolved "https://registry.npmjs.org/@apollo/protobufjs/-/protobufjs-1.2.2.tgz"
@@ -55,6 +64,11 @@
     "@types/long" "^4.0.0"
     "@types/node" "^10.1.0"
     long "^4.0.0"
+
+"@apollo/subgraph@^0.4.1":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@apollo/subgraph/-/subgraph-0.4.2.tgz#f8516f1d5e5fbd57189727497ed9f805fa5017c8"
+  integrity sha512-sIGzqfUryW6tS5RPWp1awtO+5CehjPV6xbDrWS4I2Hsj8rug8Y9oiMpcnNk8GaQ1TF3UEf99ZL16mNa4J++IIQ==
 
 "@apollographql/apollo-tools@^0.5.3":
   version "0.5.3"
@@ -289,6 +303,15 @@
   version "1.0.1"
   resolved "https://registry.npmjs.org/@nestjs/mapped-types/-/mapped-types-1.0.1.tgz"
   integrity sha512-NFvofzSinp00j5rzUd4tf+xi9od6383iY0JP7o0Bnu1fuItAUkWBgc4EKuIQ3D+c2QI3i9pG1kDWAeY27EMGtg==
+
+"@nestjs/microservices@^8.4.4":
+  version "8.4.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-8.4.4.tgz#466f860dd8997f61518bdeef871168796df7904a"
+  integrity sha512-V1xBs5mBFaWGF7RuLSQBG9ydcvX+j8RxHnk9pYF2I5kBdWt7AyTuG2qMt7es06HXEbgUmavw/zn+P6Q2WQIS5A==
+  dependencies:
+    iterare "1.2.1"
+    json-socket "0.3.0"
+    tslib "2.3.1"
 
 "@nestjs/platform-express@^8.0.0":
   version "8.4.4"
@@ -976,7 +999,7 @@ apollo-server-plugin-base@^3.5.2:
   dependencies:
     apollo-server-types "^3.5.2"
 
-apollo-server-types@^3.5.2:
+apollo-server-types@^3.0.2, apollo-server-types@^3.5.2:
   version "3.5.2"
   resolved "https://registry.npmjs.org/apollo-server-types/-/apollo-server-types-3.5.2.tgz"
   integrity sha512-vhcbIWsBkoNibABOym4AAPBoNDjokhjUQokKYdwZMeqrb850PMQdNJFrGyXT5onP408Ghv4O8PfgBuPQmeJhVQ==
@@ -1987,10 +2010,10 @@ graphql-ws@5.5.5:
   resolved "https://registry.npmjs.org/graphql-ws/-/graphql-ws-5.5.5.tgz"
   integrity sha512-hvyIS71vs4Tu/yUYHPvGXsTgo0t3arU820+lT5VjZS2go0ewp2LqyCgxEN56CzOG7Iys52eRhHBiD1gGRdiQtw==
 
-graphql@^16.3.0:
-  version "16.3.0"
-  resolved "https://registry.npmjs.org/graphql/-/graphql-16.3.0.tgz"
-  integrity sha512-xm+ANmA16BzCT5pLjuXySbQVFwH3oJctUVdy81w1sV0vBU0KgDdBGtxQOUd5zqOBk/JayAFeG8Dlmeq74rjm/A==
+graphql@15:
+  version "15.8.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.8.0.tgz#33410e96b012fa3bdb1091cc99a94769db212b38"
+  integrity sha512-5gghUc24tP9HRznNpV2+FIoq3xKkj5dTQqf4v0CpdPbFVwFkWoxOM+o+2OC9ZSvjEMTjfmG9QT+gcvggTwW1zw==
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -2262,6 +2285,11 @@ json-schema-traverse@^1.0.0:
   resolved "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz"
   integrity sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==
 
+json-socket@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/json-socket/-/json-socket-0.3.0.tgz#f4b953c685bb8e8bd0b72438f5208d9a0799ae07"
+  integrity sha512-jc8ZbUnYIWdxERFWQKVgwSLkGSe+kyzvmYxwNaRgx/c8NNyuHes4UHnPM3LUrAFXUx1BhNJ94n1h/KCRlbvV0g==
+
 json-stable-stringify-without-jsonify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz"
@@ -2331,6 +2359,11 @@ jws@^3.2.2:
   dependencies:
     jwa "^1.4.1"
     safe-buffer "^5.0.1"
+
+kafkajs@^1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/kafkajs/-/kafkajs-1.16.0.tgz#bfcc3ae2b69265ca8435b53a01ee9e8787b9fee5"
+  integrity sha512-+Rcfu2hyQ/jv5skqRY8xA7Ra+mmRkDAzCaLDYbkGtgsNKpzxPWiLbk8ub0dgr4EbWrN1Zb4BCXHUkD6+zYfdWg==
 
 levn@^0.4.1:
   version "0.4.1"
@@ -2409,6 +2442,11 @@ lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.npmjs.org/lodash.sortby/-/lodash.sortby-4.7.0.tgz"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
+
+lodash.xorby@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/lodash.xorby/-/lodash.xorby-4.7.0.tgz#9c19a6f9f063a6eb53dd03c1b6871799801463d7"
+  integrity sha1-nBmm+fBjputT3QPBtocXmYAUY9c=
 
 lodash@4.17.21, lodash@^4.17.19, lodash@^4.17.21:
   version "4.17.21"
